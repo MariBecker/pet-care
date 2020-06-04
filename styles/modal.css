@@ -16,6 +16,10 @@
   width: 420px;
 }
 
+#modal.hide {
+    display: none;
+}
+
 #modal .header {
   display: flex;
   align-items: center;
