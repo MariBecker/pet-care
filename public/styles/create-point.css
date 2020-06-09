@@ -26,6 +26,7 @@
   height: 24px;
 }
 
+
 form {
   background-color: white;
   margin: 80px auto;
@@ -109,13 +110,14 @@ form button {
 }
 
 form button:hover {
-  background-color: #2fb86e;
+  background-color: #162447;
 }
 
 .items-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
+ 
 }
 
 .items-grid li {
@@ -133,6 +135,12 @@ form button:hover {
   cursor: pointer;
 }
 
+.items-grid li img {
+  height: 100px;
+  width: 100px;
+}
+
+
 .items-grid li span {
   margin-top: 12px;
   flex: 1;
@@ -143,7 +151,7 @@ form button:hover {
 
 .items-grid li.selected {
   background: #e1faec;
-  border: 2px solid #34cd49;
+  border: 2px solid #162447;
 }
 
 .items-grid li img,
