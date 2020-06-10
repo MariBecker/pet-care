@@ -26,6 +26,17 @@
   height: 24px;
 }
 
+.content img {
+  height: 80px;
+  width: 80px;
+}
+
+.pet-care {
+  position: relative;
+  right: 665px;
+
+}
+
 
 form {
   background-color: white;
@@ -110,7 +121,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #162447;
+  background-color: #2fb86e;
 }
 
 .items-grid {

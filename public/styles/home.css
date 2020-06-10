@@ -1,7 +1,6 @@
 #page-home {
   height: 100vh;
   background: url("../assets/undraw_good_doggy_4wfq.svg") no-repeat;
-
   background-position: 35vw bottom;
 }
 
@@ -21,8 +20,9 @@
 
 .pet-care {
   position: relative;
-  right: 665px;
-  
+  right: 650px;
+  font-size: 30px;
+
 }
 
 #page-home header {
@@ -78,7 +78,7 @@
 }
 
 #page-home main a:hover {
-  background-color: #162447;
+  background-color: #2fb86e;
 }
 
 #page-home main a span {
