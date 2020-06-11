@@ -18,31 +18,40 @@
   {% include "partials/page-header.html" %}
 
   <main>
+
+  {% if total > 0 %}
+
+
     <h4>
-      <strong>2 Pontos</strong> encontrados
+      <strong>{{total}} Pontos</strong> encontrados
         </h4>
 
     <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt="Patas Dadas">
-        <h1>Patas Dadas</h1>
-        <h3>Ração, Petiscos e Roupas</h3>
-        <p>Porto Alegre, Rio Grande do Sul <br>
-              Avenida Bento Gonçalves <br>
-              Nº 9500
-            </p>
-      </div>
+
+
+      {% for place in places %}
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Papersider">
-        <h1>Onda Animal</h1>
-        <h3>Medicamentos</h3>
-        <p>Cachoeirinha, Rio Grande do Sul <br>
-              Av. Nossa Sra. da Boa Viagem <br>
-              Nº 184
+        <img src="{{ place.image }}" alt="{{ place.name }}">
+        <h1>{{ place.name }}</h1>
+        <h3>{{ place.items }}</h3>
+        <p>{{ place.city }}, {{ place.state }} <br>
+              {{ place.address }} <br>
+              {{ place.address2 }}
             </p>
       </div>
+  
+      {% endfor %}    
+
+      
     </div>
+
+  {% else %}
+
+  <h4><strong>Nenhum</strong> local econtrado</h4>  
+    
+  {% endif %}
+
 
   </main>
 
