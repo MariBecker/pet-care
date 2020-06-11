@@ -1,7 +1,7 @@
 #page-home {
   height: 100vh;
-  background: url("../assets/undraw_good_doggy_4wfq.svg") no-repeat;
-  background-position: 35vw bottom;
+  background: url("../assets/undraw_woman_mevk\ \(1\).svg") no-repeat;
+  background-position: 60vw bottom;
 }
 
 #page-home .content {
@@ -22,7 +22,6 @@
   position: relative;
   right: 650px;
   font-size: 30px;
-
 }
 
 #page-home header {
