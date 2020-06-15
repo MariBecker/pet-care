@@ -35,14 +35,7 @@ module.exports = db
   //address,
   //address2,
   //state,
-  //city,
-  //items
-  // ) VALUES(?,?,?,?,?,?,?);
-  // `;
-  //const values = [
-  // "https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-  // "Onda Animal",
-  // "Av. Nossa Sra. da Boa Viagem",
+  //city,./src/database/database.dbSra. da Boa Viagem",
   // "Nº 184",
   // "Rio Grande do Sul",
   //"Cachoeirinha",

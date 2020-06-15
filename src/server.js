@@ -74,21 +74,50 @@ server.post("/savepoint", (request, response) => {
 
 server.get("/search", (request, response) => {
   const search = request.query.search;
-
+  console.log(request.query.search)
+  server.get("/search", (request, response) => {
+    const search = request.query.search;
+    console.log(request.query.search)
+  
+    if (search == "") {
+      //Pesquisa vazia
+  
+      return response.render("search-results.html", { total: 0 });
+    }
+  
+    //Pegar os dados do banco de dados
+  
+    db.all(`SELECT * FROM places WHERE state LIKE '%${search}%'`, function (err, rows) {
+      if (err) {
+        return console.log(err);
+      }
+      // console.log("Aqui estão seus registros: ");
+      // console.log(rows);
+  
+      const total = rows.length;
+  
+      //Mostrar a página html com os dados do bando de dados
+  
+      return response.render("search-results.html", {
+        places: rows,
+        total: total,
+      });
+    });
+  });
   if (search == "") {
     //Pesquisa vazia
 
     return response.render("search-results.html", { total: 0 });
   }
 
-  //Pegar os dados do bando de dados
+  //Pegar os dados do banco de dados
 
   db.all(`SELECT * FROM places WHERE state LIKE '%${search}%'`, function (err, rows) {
     if (err) {
       return console.log(err);
     }
-    console.log("Aqui estão seus registros: ");
-    console.log(rows);
+    // console.log("Aqui estão seus registros: ");
+    // console.log(rows);
 
     const total = rows.length;
 
