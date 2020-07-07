@@ -8,3 +8,4 @@ A Pet Care é uma aplicação web que foi desenvolvida durante a Next Level Week
 * JavaScript
 * NodeJs
 * SQLite
+* Nunjucks 
