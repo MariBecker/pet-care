@@ -1,4 +1,4 @@
-![PetCare](images/photo_2020-07-07_18-26-47.png)
+![PetCare](public/assets/photo_2020-07-07_18-26-47.png)
 
 # Pet Care
 
