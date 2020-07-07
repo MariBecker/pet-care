@@ -1,4 +1,3 @@
-![PetCare](/assets/undraw_woman_mevk (1).svg) 
 
 # Pet Care
 
